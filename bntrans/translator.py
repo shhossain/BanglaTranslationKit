@@ -1,6 +1,6 @@
+from bntrans.tools import sent_tokens_bangla, sent_tokens_english
 from transformers import pipeline, AutoTokenizer, AutoConfig
 from typing import Any, Literal, Optional
-from bntrans.tools import sent_tokens_bangla, sent_tokens_english
 import warnings
 import os
 import requests
@@ -10,7 +10,9 @@ model_config = {
     "shhossain/opus-mt-en-to-bn": {
         "max_position_embeddings": 128,
     },
-    "Helsinki-NLP/opus-mt-bn-en": {"max_position_embeddings": 512},
+    "Helsinki-NLP/opus-mt-bn-en": {
+        "max_position_embeddings": 512,
+    },
 }
 
 

@@ -4,7 +4,7 @@ version = "0.0.1"
 short_description = "BanglaTranslationKit is a collaborative open-source language translation package meticulously designed for smooth offline conversion between both Bangla and English languages (English to Bangla and Bangla to English)"
 author = "shhossain"
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 with open("requirements.txt") as f:
@@ -26,10 +26,7 @@ classifiers = [
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
-    "Topic :: Scientific/Engineering :: Information Analysis",
     "Topic :: Text Processing :: Linguistic",
-    "License :: OSI Approved :: Apache-2.0 license",
     "Programming Language :: Python :: 3",
 ]
 setup(
