@@ -1,4 +1,3 @@
-pySBD @ git+https://github.com/shhossain/pySBD@9596a821dcc520cf129fdfbda014e6fc42d609b0
 transformers
 sentencepiece==0.1.99
 sacremoses==0.0.53

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-version = "0.0.1"
-short_description = "BanglaTranslationKit is a collaborative open-source language translation package meticulously designed for smooth offline conversion between both Bangla and English languages (English to Bangla and Bangla to English)"
+version = "0.0.2"
+short_description = "BanglaTranslationKit: Open-source tool for offline Bangla-English translation."
 author = "shhossain"
 
 with open("README.md", "r", encoding="utf-8") as fh:
