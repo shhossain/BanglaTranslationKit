@@ -9,7 +9,18 @@ from bntrans import Translator
 
 
 def match_percentage(a, b):
-    return len(set(a) & set(b)) / len(a)
+    """
+    Returns the percentage of matching characters between a and b
+    """
+    if len(a) != len(b):
+        a = a[: min(len(a), len(b))]
+
+    count = 0
+    for i in range(len(a)):
+        if a[i] == b[i]:
+            count += 1
+
+    return count / len(a)
 
 
 class TestTranslator(unittest.TestCase):
