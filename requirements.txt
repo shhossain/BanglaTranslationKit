@@ -1,4 +1,5 @@
 git+https://github.com/shhossain/pySBD.git
 transformers
-sacremoses
+sentencepiece==0.1.99
+sacremoses==0.0.53
 torch
