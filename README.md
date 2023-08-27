@@ -1,6 +1,6 @@
 # BanglaTranslationKit
 
-BanglaTranslationKit is a open-source translation package for offline conversion between both Bengali and English languages (English to Bangla and Bangla to English)
+BanglaTranslationKit is an open-source translation package for offline conversion between both Bengali and English languages (English to Bangla and Bangla to English)
 
 ## Installation
 
@@ -31,10 +31,10 @@ translator = Translator(src="en", dest="bn", use_gpu=False)
 # Specify a custom model (from huggingface.co/models or local path)
 translator = Translator(model="mymodel")
 
-# If custom model doesn't have a maximum length, you can specify it. It is better to specify it as some models have wrong maximum length in their config.
+# If the custom model doesn't have a maximum length, you can specify it. It is better to specify it as some models have wrong maximum length in their config.
 translator = Translator(model="mymodel", max_length=512)
 
-# You can also use `generate` method to get raw output from the model
+# You can also use the `generate` method to get raw output from the model
 translator.generate("Hello world!")
 ```
 
@@ -52,7 +52,7 @@ print(translation)
 
 ## Use in Command Line
 
-You can also use this package in command line. Just install it and run the following command:
+You can also use this package in the command line. Just install it and run the following command:
 
 ```bash
 bntrans "Hello world!"
@@ -74,7 +74,7 @@ options:
                         Model to use for translation
   -g GPU, --gpu GPU     Whether to use GPU for translation (default: True)
   -l MAX_LENGTH, --max-length MAX_LENGTH
-                        Maximum length of the model (default: None)
+                        The maximum length of the model (default: None)
   -c USE_CLOUD, --use-cloud USE_CLOUD
                         Whether to use huggingface inference API (default: False)
   -t HUGGINGFACE_TOKEN, --huggingface-token HUGGINGFACE_TOKEN
