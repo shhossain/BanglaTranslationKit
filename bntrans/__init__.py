@@ -1,0 +1,1 @@
+from bntrans.translator import Translator

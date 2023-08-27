@@ -1,0 +1,4 @@
+git+https://github.com/shhossain/pySBD.git
+transformers
+sacremoses
+torch
