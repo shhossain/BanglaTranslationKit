@@ -8,19 +8,17 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from bntrans import Translator
 
 
+import nltk
+
+
+def edit_distance(a, b):
+    words = a.split()
+    words2 = b.split()
+    return nltk.edit_distance(words, words2)
+
+
 def match_percentage(a, b):
-    """
-    Returns the percentage of matching characters between a and b
-    """
-    if len(a) != len(b):
-        a = a[: min(len(a), len(b))]
-
-    count = 0
-    for i in range(len(a)):
-        if a[i] == b[i]:
-            count += 1
-
-    return count / len(a)
+    return 1 - (edit_distance(a, b) / max(len(a), len(b)))
 
 
 class TestTranslator(unittest.TestCase):

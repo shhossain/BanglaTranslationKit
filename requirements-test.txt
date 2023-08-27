@@ -1,0 +1,5 @@
+transformers
+sentencepiece==0.1.99
+sacremoses==0.0.53
+torch
+nltk

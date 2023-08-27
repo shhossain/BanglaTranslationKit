@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = "0.0.4"
+version = "0.0.5"
 short_description = "BanglaTranslationKit: Open-source tool for offline Bangla-English translation."
 author = "shhossain"
 
